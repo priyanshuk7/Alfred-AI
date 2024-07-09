@@ -11,7 +11,7 @@ class OpenAIService {
         Uri.parse('https://api.openai.com/v1/chat/completions'),
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer $openAiAPIKey',
+          //'Authorization': 'Bearer $openAiAPIKey',
         },
         body: jsonEncode({
           "model": "gpt-3.5-turbo-16k",
@@ -57,7 +57,7 @@ class OpenAIService {
         Uri.parse('https://api.openai.com/v1/chat/completions'),
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer $openAiAPIKey',
+          //'Authorization': 'Bearer $openAiAPIKey',
         },
         body: jsonEncode({
           "model": "gpt-3.5-turbo-16k",
@@ -90,7 +90,7 @@ class OpenAIService {
         Uri.parse('https://api.openai.com/v1/images/generations'),
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer $openAiAPIKey',
+          //'Authorization': 'Bearer $openAiAPIKey',
         },
         body: jsonEncode({
           'prompt': prompt,
